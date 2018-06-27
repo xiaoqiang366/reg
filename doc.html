@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Regexper</title>
+
+  <meta name="description" content="Regular expression visualizer using railroad diagrams" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="theme-color" content="#bada55" />
+
+
+  <link rel="shortcut icon" href="https://aoxiaoqiang.github.io/reg/favicon.ico" />
+  <link rel="stylesheet" href="https://aoxiaoqiang.github.io/reg/css/main.css" />
+  <!-- Built: 2018-06-27T13:00:01.600Z -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <h1>
+            <a href="https://aoxiaoqiang.github.io/reg/">Regular Expressions</a>
+          </h1>
+          <span>你以为你只有2个问题, 其实......</span>
+        </div>
+    </header>
+
+  <main id="content">
+    <div class="copy documentation">
+      <section>
+        <h1>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">阅读铁路图</font>
+          </font>
+        </h1>
+
+        <p>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Regexper生成的图像通常被称为“铁路图”。</font>
+            <font style="vertical-align: inherit;">这些图是一种直接的方式，用于说明在正则表达式中有时会变得非常复杂的处理，并带有嵌套循环和可选元素。</font>
+            <font style="vertical-align: inherit;">阅读这些图的最简单方法是从左边开始，然后按照右边的路线。</font>
+            <font style="vertical-align: inherit;">如果遇到分支，那么可以选择多个路径中的一个（并且这些路径可以循环回到图的前面部分）。</font>
+            <font style="vertical-align: inherit;">为了使字符串成功地匹配图表中的正则表达式，您必须能够在从左到右移动时完成图表的每个部分，然后继续完成整个图表。</font>
+          </font>
+        </p>
+
+        <figure class="shift-right svg-container" data-expr="Lions(?: and|,) tigers,? and bears\. Oh my!">
+          <div class="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              version="1.1" width="440.0156555175781" height="73">
+              <defs>
+                <style type="text/css">
+                  svg {
+                    background-color: #fff;
+                  }
+
+                  .root text,
+                  .root tspan {
+                    font: 12px Arial;
+                  }
+
+                  .root path {
+                    fill-opacity: 0;
+                    stroke-width: 2px;
+                    stroke: #000;
+                  }
+
+                  .root circle {
+                    fill: #6b6659;
+                    stroke-width: 2px;
+                    stroke: #000;
+                  }
+
+                  .anchor text,
+                  .any-character text {
+                    fill: #fff;
+                  }
+
+                  .anchor rect,
+                  .any-character rect {
+                    fill: #6b6659;
+                  }
+
+                  .escape text,
+                  .charset-escape text,
+                  .literal text {
+                    fill: #000;
+                  }
+
+                  .escape rect,
+                  .charset-escape rect {
+                    fill: #bada55;
+                  }
+
+                  .literal rect {
+                    fill: #dae9e5;
+                  }
+
+                  .charset .charset-box {
+                    fill: #cbcbba;
+                  }
+
+                  .subexp .subexp-label tspan,
+                  .charset .charset-label tspan,
+                  .match-fragment .repeat-label tspan {
+                    font-size: 10px;
+                  }
+
+                  .repeat-label {
+                    cursor: help;
+                  }
+
+                  .subexp .subexp-label tspan,
+                  .charset .charset-label tspan {
+                    dominant-baseline: text-after-edge;
+                  }
+
+                  .subexp .subexp-box {
+                    stroke: #908c83;
+                    stroke-dasharray: 6, 2;
+                    stroke-width: 2px;
+                    fill-opacity: 0;
+                  }
+
+                  .quote {
+                    fill: #908c83;
+                  }
+                </style>
+              </defs>
+              <metadata>
+                <rdf:rdf>
+                  <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                    <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                  </cc:license>
+                </rdf:rdf>
+              </metadata>
+              <desc>Created with Snap</desc>
+              <g transform="matrix(1,0,0,1,15,10)" class="root">
+                <g transform="matrix(1,0,0,1,10,0)" class="regexp match">
+                  <path d="M46.671875,26.5H56.6719M138.01565,26.5H148.0156M198.67185,26.5H223.6719M244.9844,26.5H269.9844"></path>
+                  <g transform="matrix(1,0,0,1,0,14.5)" class="match-fragment literal">
+                    <g class="label">
+                      <rect width="46.671875" height="24" rx="3" ry="3"></rect>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                        <tspan class="quote">“</tspan>
+                        <tspan>Lions</tspan>
+                        <tspan class="quote">”</tspan>
+                      </text>
+                    </g>
+                  </g>
+                  <g transform="matrix(1,0,0,1,56.6719,0)" class="match-fragment subexp regexp">
+                    <path d="M0,26.5c10,0 10,-14.5 20,-14.5M81.34375,26.5c-10,0 -10,-14.5 -20,-14.5M0,26.5c10,0 10,14.5 20,14.5M81.34375,26.5c-10,0 -10,14.5 -20,14.5"></path>
+                    <g transform="matrix(1,0,0,1,20,0)" class="regexp-matches">
+                      <path d="M0,12h0M41.34375,12H41.34375M0,41h10.0156M31.3281,41H41.34375"></path>
+                      <g transform="matrix(1,0,0,1,0,0)" class="match match-fragment literal">
+                        <g class="label">
+                          <rect width="41.34375" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan> and</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,10.0156,29)" class="match match-fragment literal">
+                        <g class="label">
+                          <rect width="21.3125" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>,</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="matrix(1,0,0,1,148.0156,14.5)" class="match-fragment literal">
+                    <g class="label">
+                      <rect width="50.65625" height="24" rx="3" ry="3"></rect>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                        <tspan class="quote">“</tspan>
+                        <tspan> tigers</tspan>
+                        <tspan class="quote">”</tspan>
+                      </text>
+                    </g>
+                  </g>
+                  <g transform="matrix(1,0,0,1,208.6719,4.5)" class="match-fragment">
+                    <path d="M0,22q10,0 10,-10v-2q0,-10 10,-10h11.3125q10,0 10,10v2q0,10 10,10"></path>
+                    <g transform="matrix(1,0,0,1,15,10)" class="literal">
+                      <g class="label">
+                        <rect width="21.3125" height="24" rx="3" ry="3"></rect>
+                        <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                          <tspan class="quote">“</tspan>
+                          <tspan>,</tspan>
+                          <tspan class="quote">”</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="matrix(1,0,0,1,269.9844,14.5)" class="match-fragment literal">
+                    <g class="label">
+                      <rect width="120.03125" height="24" rx="3" ry="3"></rect>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                        <tspan class="quote">“</tspan>
+                        <tspan> and bears. Oh my!</tspan>
+                        <tspan class="quote">”</tspan>
+                      </text>
+                    </g>
+                  </g>
+                </g>
+                <path d="M10,26.5H0M400.01565,26.5H410.0156555175781"></path>
+                <circle cx="0" cy="26.5" r="5"></circle>
+                <circle cx="410.0156555175781" cy="26.5" r="5"></circle>
+              </g>
+            </svg>
+          </div>
+
+        </figure>
+
+        <p>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">举个例子，这个表达会匹配“狮子，老虎和熊，哦，我的！” </font>
+            <font style="vertical-align: inherit;">或更符合语法的“狮子，老虎和熊，哦，我的！” </font>
+            <font class="" style="vertical-align: inherit;">（有或没有牛津逗号）。</font>
+            <font style="vertical-align: inherit;">图表首先匹配字符串“Lions”; </font>
+            <font style="vertical-align: inherit;">你不能在你的输入中继续。</font>
+            <font style="vertical-align: inherit;">然后在逗号或字符串“和”之间进行选择。</font>
+            <font style="vertical-align: inherit;">无论您做出什么选择，输入字符串都必须包含“老虎”，然后包含可选逗号（您的路径可以通过逗号或绕过逗号）。</font>
+            <font style="vertical-align: inherit;">最后，字符串必须以“和熊，哦，我的！”结尾。</font>
+          </font>
+        </p>
+
+        <section>
+          <h2>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">这些图的基本部分</font>
+            </font>
+          </h2>
+
+          <p>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">要理解的这些图中最简单的部分是匹配一些特定位置的文本而没有选项的部分。</font>
+              <font style="vertical-align: inherit;">它们是：文字，逃逸序列和“任何字符”。</font>
+            </font>
+          </p>
+
+          <div class="section">
+            <h3>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">字面</font>
+              </font>
+            </h3>
+
+            <figure class="shift-left svg-container" data-expr="A literal example">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="156.6875" height="44">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment literal">
+                      <g class="label">
+                        <rect width="106.6875" height="24" rx="3" ry="3"></rect>
+                        <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                          <tspan class="quote">“</tspan>
+                          <tspan>A literal example</tspan>
+                          <tspan class="quote">”</tspan>
+                        </text>
+                      </g>
+                    </g>
+                    <path d="M10,12H0M116.6875,12H126.6875"></path>
+                    <circle cx="0" cy="12" r="5"></circle>
+                    <circle cx="126.6875" cy="12" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+            </figure>
+
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">文字匹配确切的文本字符串。</font>
+                <font style="vertical-align: inherit;">它们以浅蓝色框显示，并且引用了内容（以便更容易看到任何前导或尾随空白）。</font>
+              </font>
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">转义序列</font>
+              </font>
+            </h3>
+
+            <figure class="shift-left svg-container" data-expr="\w\x7f\u00bb\1\0">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="436.765625" height="44">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match">
+                      <path d="M36,12H46M82.671875,12H92.6719M147.687525,12H157.6875M310.75,12H320.75"></path>
+                      <g transform="matrix(1,0,0,1,0,0)" class="match-fragment escape">
+                        <g class="label">
+                          <rect width="36" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan>word</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,46,0)" class="match-fragment escape">
+                        <g class="label">
+                          <rect width="36.671875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan>0x7F</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,92.6719,0)" class="match-fragment escape">
+                        <g class="label">
+                          <rect width="55.015625" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan>U+00BB</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,157.6875,0)" class="match-fragment escape">
+                        <g class="label">
+                          <rect width="153.0625" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan>Back reference (group = 1)</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,320.75,0)" class="match-fragment escape">
+                        <g class="label">
+                          <rect width="66.015625" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan>null (0x00)</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <path d="M10,12H0M396.765625,12H406.765625"></path>
+                    <circle cx="0" cy="12" r="5"></circle>
+                    <circle cx="406.765625" cy="12" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+            </figure>
+
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">转义序列显示在绿色框中，并包含他们将匹配的字符类型的描述。</font>
+              </font>
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">“任何角色”</font>
+              </font>
+            </h3>
+
+            <figure class="shift-left svg-container" data-expr=".">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="132.859375" height="44">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment any-character">
+                      <g class="label">
+                        <rect width="82.859375" height="24"></rect>
+                        <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                          <tspan>any character</tspan>
+                        </text>
+                      </g>
+                    </g>
+                    <path d="M10,12H0M92.859375,12H102.859375"></path>
+                    <circle cx="0" cy="12" r="5"></circle>
+                    <circle cx="102.859375" cy="12" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+            </figure>
+
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">“任何字符”与转义序列相似。</font>
+                <font style="vertical-align: inherit;">它匹配任何单个字符。</font>
+              </font>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">字符集</font>
+            </font>
+          </h2>
+
+          <figure class="shift-left svg-container" data-expr="[#a-z\n][^$0-9\b]">
+            <div class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                version="1.1" width="278.7500305175781" height="124">
+                <defs>
+                  <style type="text/css">
+                    svg {
+                      background-color: #fff;
+                    }
+
+                    .root text,
+                    .root tspan {
+                      font: 12px Arial;
+                    }
+
+                    .root path {
+                      fill-opacity: 0;
+                      stroke-width: 2px;
+                      stroke: #000;
+                    }
+
+                    .root circle {
+                      fill: #6b6659;
+                      stroke-width: 2px;
+                      stroke: #000;
+                    }
+
+                    .anchor text,
+                    .any-character text {
+                      fill: #fff;
+                    }
+
+                    .anchor rect,
+                    .any-character rect {
+                      fill: #6b6659;
+                    }
+
+                    .escape text,
+                    .charset-escape text,
+                    .literal text {
+                      fill: #000;
+                    }
+
+                    .escape rect,
+                    .charset-escape rect {
+                      fill: #bada55;
+                    }
+
+                    .literal rect {
+                      fill: #dae9e5;
+                    }
+
+                    .charset .charset-box {
+                      fill: #cbcbba;
+                    }
+
+                    .subexp .subexp-label tspan,
+                    .charset .charset-label tspan,
+                    .match-fragment .repeat-label tspan {
+                      font-size: 10px;
+                    }
+
+                    .repeat-label {
+                      cursor: help;
+                    }
+
+                    .subexp .subexp-label tspan,
+                    .charset .charset-label tspan {
+                      dominant-baseline: text-after-edge;
+                    }
+
+                    .subexp .subexp-box {
+                      stroke: #908c83;
+                      stroke-dasharray: 6, 2;
+                      stroke-width: 2px;
+                      fill-opacity: 0;
+                    }
+
+                    .quote {
+                      fill: #908c83;
+                    }
+                  </style>
+                </defs>
+                <metadata>
+                  <rdf:rdf>
+                    <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                      <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                      <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                    </cc:license>
+                  </rdf:rdf>
+                </metadata>
+                <desc>Created with Snap</desc>
+                <g transform="matrix(1,0,0,1,15,11)" class="root">
+                  <g transform="matrix(1,0,0,1,10,0)" class="regexp match">
+                    <path d="M104.046875,57H114.0469"></path>
+                    <g transform="matrix(1,0,0,1,0,0)" class="match-fragment charset">
+                      <rect rx="3" ry="3" class="charset-box" transform="matrix(1,0,0,1,0,11)" width="104.046875" height="92"></rect>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,0,11)" class="charset-label">
+                        <tspan>One of:</tspan>
+                      </text>
+                      <g transform="matrix(1,0,0,1,5,16)">
+                        <g transform="matrix(1,0,0,1,34.6953,0)" class="literal">
+                          <g class="label">
+                            <rect width="24.65625" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan class="quote">“</tspan>
+                              <tspan>#</tspan>
+                              <tspan class="quote">”</tspan>
+                            </text>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,15.711,29)" class="charset-range">
+                          <text x="0" y="0" transform="matrix(1,0,0,1,29.6563,16)">-</text>
+                          <g transform="matrix(1,0,0,1,0,0)" class="literal">
+                            <g class="label">
+                              <rect width="24.65625" height="24" rx="3" ry="3"></rect>
+                              <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                                <tspan class="quote">“</tspan>
+                                <tspan>a</tspan>
+                                <tspan class="quote">”</tspan>
+                              </text>
+                            </g>
+                          </g>
+                          <g transform="matrix(1,0,0,1,38.6406,0)" class="literal">
+                            <g class="label">
+                              <rect width="23.984375" height="24" rx="3" ry="3"></rect>
+                              <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                                <tspan class="quote">“</tspan>
+                                <tspan>z</tspan>
+                                <tspan class="quote">”</tspan>
+                              </text>
+                            </g>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,0,58)" class="charset-escape">
+                          <g class="label">
+                            <rect width="94.046875" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan>line feed (0x0A)</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                    <g transform="matrix(1,0,0,1,114.0469,0)" class="match-fragment charset">
+                      <rect rx="3" ry="3" class="charset-box" transform="matrix(1,0,0,1,0,11)" width="114.703125" height="92"></rect>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,0,11)" class="charset-label">
+                        <tspan>None of:</tspan>
+                      </text>
+                      <g transform="matrix(1,0,0,1,5,16)">
+                        <g transform="matrix(1,0,0,1,40.0234,0)" class="literal">
+                          <g class="label">
+                            <rect width="24.65625" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan class="quote">“</tspan>
+                              <tspan>$</tspan>
+                              <tspan class="quote">”</tspan>
+                            </text>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,20.7031,29)" class="charset-range">
+                          <text x="0" y="0" transform="matrix(1,0,0,1,29.6563,16)">-</text>
+                          <g transform="matrix(1,0,0,1,0,0)" class="literal">
+                            <g class="label">
+                              <rect width="24.65625" height="24" rx="3" ry="3"></rect>
+                              <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                                <tspan class="quote">“</tspan>
+                                <tspan>0</tspan>
+                                <tspan class="quote">”</tspan>
+                              </text>
+                            </g>
+                          </g>
+                          <g transform="matrix(1,0,0,1,38.6406,0)" class="literal">
+                            <g class="label">
+                              <rect width="24.65625" height="24" rx="3" ry="3"></rect>
+                              <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                                <tspan class="quote">“</tspan>
+                                <tspan>9</tspan>
+                                <tspan class="quote">”</tspan>
+                              </text>
+                            </g>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,0,58)" class="charset-escape">
+                          <g class="label">
+                            <rect width="104.703125" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan>backspace (0x08)</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <path d="M10,57H0M238.750025,57H248.75003051757812"></path>
+                  <circle cx="0" cy="57" r="5"></circle>
+                  <circle cx="248.75003051757812" cy="57" r="5"></circle>
+                </g>
+              </svg>
+            </div>
+
+          </figure>
+
+          <p>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">字符集将匹配或不匹配单个字符的集合。</font>
+              <font style="vertical-align: inherit;">它们显示为包含文字和转义序列的框。</font>
+              <font style="vertical-align: inherit;">顶部的标签表示该字符集将与所包含项目的“一个”或包含项目的“无”匹配。</font>
+            </font>
+          </p>
+        </section>
+
+        <section>
+          <h2>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">子表达式</font>
+            </font>
+          </h2>
+
+          <figure class="shift-left svg-container" data-expr="(example\s)(?=content)">
+            <div class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                version="1.1" width="309.53131103515625" height="76">
+                <defs>
+                  <style type="text/css">
+                    svg {
+                      background-color: #fff;
+                    }
+
+                    .root text,
+                    .root tspan {
+                      font: 12px Arial;
+                    }
+
+                    .root path {
+                      fill-opacity: 0;
+                      stroke-width: 2px;
+                      stroke: #000;
+                    }
+
+                    .root circle {
+                      fill: #6b6659;
+                      stroke-width: 2px;
+                      stroke: #000;
+                    }
+
+                    .anchor text,
+                    .any-character text {
+                      fill: #fff;
+                    }
+
+                    .anchor rect,
+                    .any-character rect {
+                      fill: #6b6659;
+                    }
+
+                    .escape text,
+                    .charset-escape text,
+                    .literal text {
+                      fill: #000;
+                    }
+
+                    .escape rect,
+                    .charset-escape rect {
+                      fill: #bada55;
+                    }
+
+                    .literal rect {
+                      fill: #dae9e5;
+                    }
+
+                    .charset .charset-box {
+                      fill: #cbcbba;
+                    }
+
+                    .subexp .subexp-label tspan,
+                    .charset .charset-label tspan,
+                    .match-fragment .repeat-label tspan {
+                      font-size: 10px;
+                    }
+
+                    .repeat-label {
+                      cursor: help;
+                    }
+
+                    .subexp .subexp-label tspan,
+                    .charset .charset-label tspan {
+                      dominant-baseline: text-after-edge;
+                    }
+
+                    .subexp .subexp-box {
+                      stroke: #908c83;
+                      stroke-dasharray: 6, 2;
+                      stroke-width: 2px;
+                      fill-opacity: 0;
+                    }
+
+                    .quote {
+                      fill: #908c83;
+                    }
+                  </style>
+                </defs>
+                <metadata>
+                  <rdf:rdf>
+                    <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                      <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                      <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                    </cc:license>
+                  </rdf:rdf>
+                </metadata>
+                <desc>Created with Snap</desc>
+                <g transform="matrix(1,0,0,1,15,10.9062)" class="root">
+                  <g transform="matrix(1,0,0,1,10,0)" class="regexp match">
+                    <path d="M156.703175,33.0938H189.4454"></path>
+                    <g transform="matrix(1,0,0,1,0,0)" class="match-fragment subexp">
+                      <rect rx="3" ry="3" class="subexp-box" transform="matrix(1,0,0,1,0,11.0938)" width="166.70318603515625" height="44"></rect>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,0,11.0938)" class="subexp-label">
+                        <tspan>group #1</tspan>
+                      </text>
+                      <g transform="matrix(1,0,0,1,10,21.0938)" class="regexp match">
+                        <path d="M63.34375,12H73.3438"></path>
+                        <g transform="matrix(1,0,0,1,0,0)" class="match-fragment literal">
+                          <g class="label">
+                            <rect width="63.34375" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan class="quote">“</tspan>
+                              <tspan>example</tspan>
+                              <tspan class="quote">”</tspan>
+                            </text>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,73.3438,0)" class="match-fragment escape">
+                          <g class="label">
+                            <rect width="73.359375" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan>white space</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                    <g transform="matrix(1,0,0,1,176.7032,0.0938)" class="match-fragment subexp">
+                      <rect rx="3" ry="3" class="subexp-box" transform="matrix(1,0,0,1,0,11)" width="82.828125" height="44"></rect>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,0,11)" class="subexp-label">
+                        <tspan>positive lookahead</tspan>
+                      </text>
+                      <g transform="matrix(1,0,0,1,12.7422,21)" class="regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="57.34375" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>content</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <path d="M20,33.0938H0M256.78915,33.0938H279.53131103515625"></path>
+                  <circle cx="0" cy="33.0938" r="5"></circle>
+                  <circle cx="279.53131103515625" cy="33.0938" r="5"></circle>
+                </g>
+              </svg>
+            </div>
+
+          </figure>
+
+          <p>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">子表达式在表达式中的项目周围用虚线轮廓表示。</font>
+              <font style="vertical-align: inherit;">捕获的子表达式将标记为它们将被捕获的组编号。</font>
+              <font style="vertical-align: inherit;">积极和消极的前瞻被贴上标签。</font>
+            </font>
+          </p>
+        </section>
+
+        <section>
+          <h2>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">轮流</font>
+            </font>
+          </h2>
+
+          <figure class="shift-left svg-container" data-expr="one\s|two\W|three\t|four\n">
+            <div class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                version="1.1" width="232.7031707763672" height="131">
+                <defs>
+                  <style type="text/css">
+                    svg {
+                      background-color: #fff;
+                    }
+
+                    .root text,
+                    .root tspan {
+                      font: 12px Arial;
+                    }
+
+                    .root path {
+                      fill-opacity: 0;
+                      stroke-width: 2px;
+                      stroke: #000;
+                    }
+
+                    .root circle {
+                      fill: #6b6659;
+                      stroke-width: 2px;
+                      stroke: #000;
+                    }
+
+                    .anchor text,
+                    .any-character text {
+                      fill: #fff;
+                    }
+
+                    .anchor rect,
+                    .any-character rect {
+                      fill: #6b6659;
+                    }
+
+                    .escape text,
+                    .charset-escape text,
+                    .literal text {
+                      fill: #000;
+                    }
+
+                    .escape rect,
+                    .charset-escape rect {
+                      fill: #bada55;
+                    }
+
+                    .literal rect {
+                      fill: #dae9e5;
+                    }
+
+                    .charset .charset-box {
+                      fill: #cbcbba;
+                    }
+
+                    .subexp .subexp-label tspan,
+                    .charset .charset-label tspan,
+                    .match-fragment .repeat-label tspan {
+                      font-size: 10px;
+                    }
+
+                    .repeat-label {
+                      cursor: help;
+                    }
+
+                    .subexp .subexp-label tspan,
+                    .charset .charset-label tspan {
+                      dominant-baseline: text-after-edge;
+                    }
+
+                    .subexp .subexp-box {
+                      stroke: #908c83;
+                      stroke-dasharray: 6, 2;
+                      stroke-width: 2px;
+                      fill-opacity: 0;
+                    }
+
+                    .quote {
+                      fill: #908c83;
+                    }
+                  </style>
+                </defs>
+                <metadata>
+                  <rdf:rdf>
+                    <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                      <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                      <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                      <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                    </cc:license>
+                  </rdf:rdf>
+                </metadata>
+                <desc>Created with Snap</desc>
+                <g transform="matrix(1,0,0,1,15,10)" class="root">
+                  <g transform="matrix(1,0,0,1,10,0)" class="regexp">
+                    <path d="M10,22q0,-10 10,-10M172.7031707763672,22q0,-10 -10,-10M0,55.5c10,0 10,-14.5 20,-14.5M182.7031707763672,55.5c-10,0 -10,-14.5 -20,-14.5M0,55.5c10,0 10,14.5 20,14.5M182.7031707763672,55.5c-10,0 -10,14.5 -20,14.5M10,89q0,10 10,10M172.7031707763672,89q0,10 -10,10M0,55.5q10,0 10,-10V22M182.7031707763672,55.5q-10,0 -10,-10V22M0,55.5q10,0 10,10V89M182.7031707763672,55.5q-10,0 -10,10V89"></path>
+                    <g transform="matrix(1,0,0,1,20,0)" class="regexp-matches">
+                      <path d="M0,12h10.6719M132.031275,12H142.7031707763672M0,41h18.0156M124.687525,41H142.7031707763672M0,70h11.6719M131.031325,70H142.7031707763672M0,99h0M142.703175,99H142.7031707763672"></path>
+                      <g transform="matrix(1,0,0,1,10.6719,0)" class="match">
+                        <path d="M38,12H48"></path>
+                        <g transform="matrix(1,0,0,1,0,0)" class="match-fragment literal">
+                          <g class="label">
+                            <rect width="38" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan class="quote">“</tspan>
+                              <tspan>one</tspan>
+                              <tspan class="quote">”</tspan>
+                            </text>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,48,0)" class="match-fragment escape">
+                          <g class="label">
+                            <rect width="73.359375" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan>white space</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,18.0156,29)" class="match">
+                        <path d="M36.65625,12H46.6563"></path>
+                        <g transform="matrix(1,0,0,1,0,0)" class="match-fragment literal">
+                          <g class="label">
+                            <rect width="36.65625" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan class="quote">“</tspan>
+                              <tspan>two</tspan>
+                              <tspan class="quote">”</tspan>
+                            </text>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,46.6563,0)" class="match-fragment escape">
+                          <g class="label">
+                            <rect width="60.015625" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan>non-word</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,11.6719,58)" class="match">
+                        <path d="M45.34375,12H55.3438"></path>
+                        <g transform="matrix(1,0,0,1,0,0)" class="match-fragment literal">
+                          <g class="label">
+                            <rect width="45.34375" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan class="quote">“</tspan>
+                              <tspan>three</tspan>
+                              <tspan class="quote">”</tspan>
+                            </text>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,55.3438,0)" class="match-fragment escape">
+                          <g class="label">
+                            <rect width="64.015625" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan>tab (0x09)</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                      <g transform="matrix(1,0,0,1,0,87)" class="match">
+                        <path d="M38.65625,12H48.6563"></path>
+                        <g transform="matrix(1,0,0,1,0,0)" class="match-fragment literal">
+                          <g class="label">
+                            <rect width="38.65625" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan class="quote">“</tspan>
+                              <tspan>four</tspan>
+                              <tspan class="quote">”</tspan>
+                            </text>
+                          </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,48.6563,0)" class="match-fragment escape">
+                          <g class="label">
+                            <rect width="94.046875" height="24" rx="3" ry="3"></rect>
+                            <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                              <tspan>line feed (0x0A)</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <path d="M10,55.5H0M192.7031707763672,55.5H202.7031707763672"></path>
+                  <circle cx="0" cy="55.5" r="5"></circle>
+                  <circle cx="202.7031707763672" cy="55.5" r="5"></circle>
+                </g>
+              </svg>
+            </div>
+
+          </figure>
+
+          <p>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">轮换为经常性扩展提供选择。</font>
+              <font style="vertical-align: inherit;">它表现为多种选择的表达方式。</font>
+            </font>
+          </p>
+        </section>
+
+        <section>
+          <h2>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">量词</font>
+            </font>
+          </h2>
+
+          <p>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">量词表示部分表达式是否应该重复或可选。</font>
+              <font style="vertical-align: inherit;">它们的显示方式类似于交替，通过图分支的路径（并且可能循环回自己）。</font>
+              <font style="vertical-align: inherit;">除非通过路径上的箭头指示，否则首选路径将继续直行。</font>
+            </font>
+          </p>
+
+          <div class="section">
+            <h3>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">零或更多的</font>
+              </font>
+            </h3>
+
+            <figure class="shift-left svg-container" data-expr="(?:greedy)*">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="134.671875" height="64">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M0,22q10,0 10,-10v-2q0,-10 10,-10h44.671875q10,0 10,10v2q0,10 10,10M15,22q-10,0 -10,10v2q0,10 10,10h54.671875q10,0 10,-10v-2q0,-10 -10,-10M79.671875,37l5,-5m-5,5l-5,-5"></path>
+                      <g transform="matrix(1,0,0,1,15,10)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="54.671875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <path d="M25,22H0M79.671875,22H104.671875"></path>
+                    <circle cx="0" cy="22" r="5"></circle>
+                    <circle cx="104.671875" cy="22" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <figure class="shift-left svg-container" data-expr="(?:non-greedy)*?">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="158.6875" height="64">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M0,22q10,0 10,-10v-2q0,-10 10,-10h68.6875q10,0 10,10v2q0,10 10,10M10,7l5,5m-5,-5l-5,5M15,22q-10,0 -10,10v2q0,10 10,10h78.6875q10,0 10,-10v-2q0,-10 -10,-10"></path>
+                      <g transform="matrix(1,0,0,1,15,10)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="78.6875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>non-greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <path d="M25,22H0M103.6875,22H128.6875"></path>
+                    <circle cx="0" cy="22" r="5"></circle>
+                    <circle cx="128.6875" cy="22" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">非贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">零或更多的量词匹配模式的任何重复次数。</font>
+              </font>
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">需要</font>
+              </font>
+            </h3>
+
+            <figure class="shift-left svg-container" data-expr="(?:greedy)+">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="129.671875" height="54">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M10,12q-10,0 -10,10v2q0,10 10,10h54.671875q10,0 10,-10v-2q0,-10 -10,-10M74.671875,27l5,-5m-5,5l-5,-5"></path>
+                      <g transform="matrix(1,0,0,1,10,0)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="54.671875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <path d="M20,12H0M74.671875,12H99.671875"></path>
+                    <circle cx="0" cy="12" r="5"></circle>
+                    <circle cx="99.671875" cy="12" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <figure class="shift-left svg-container" data-expr="(?:non-greedy)+?">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="148.6875" height="54">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M10,12q-10,0 -10,10v2q0,10 10,10h78.6875q10,0 10,-10v-2q0,-10 -10,-10"></path>
+                      <g transform="matrix(1,0,0,1,10,0)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="78.6875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>non-greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <path d="M20,12H0M98.6875,12H118.6875"></path>
+                    <circle cx="0" cy="12" r="5"></circle>
+                    <circle cx="118.6875" cy="12" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">非贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">所需的量词匹配模式的一个或多个重复。</font>
+                <font style="vertical-align: inherit;">请注意，它没有允许模式像零或更多量词一样被跳过的路径。</font>
+              </font>
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">可选的</font>
+              </font>
+            </h3>
+
+            <figure class="shift-left svg-container" data-expr="(?:greedy)?">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="134.671875" height="54">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M0,22q10,0 10,-10v-2q0,-10 10,-10h44.671875q10,0 10,10v2q0,10 10,10"></path>
+                      <g transform="matrix(1,0,0,1,15,10)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="54.671875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <path d="M25,22H0M79.671875,22H104.671875"></path>
+                    <circle cx="0" cy="22" r="5"></circle>
+                    <circle cx="104.671875" cy="22" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <figure class="shift-left svg-container" data-expr="(?:non-greedy)??">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="158.6875" height="54">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M0,22q10,0 10,-10v-2q0,-10 10,-10h68.6875q10,0 10,10v2q0,10 10,10M10,7l5,5m-5,-5l-5,5"></path>
+                      <g transform="matrix(1,0,0,1,15,10)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="78.6875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>non-greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <path d="M25,22H0M103.6875,22H128.6875"></path>
+                    <circle cx="0" cy="22" r="5"></circle>
+                    <circle cx="128.6875" cy="22" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">非贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">可选的量词与模式最多匹配一次。</font>
+                <font style="vertical-align: inherit;">请注意，它没有允许模式像零个或多个或所需量词一样循环回去的路径。</font>
+              </font>
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">范围</font>
+              </font>
+            </h3>
+
+            <figure class="shift-left svg-container" data-expr="(?:greedy){5,10}">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="129.671875" height="67">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M10,12q-10,0 -10,10v2q0,10 10,10h54.671875q10,0 10,-10v-2q0,-10 -10,-10M74.671875,27l5,-5m-5,5l-5,-5"></path>
+                      <g transform="matrix(1,0,0,1,10,0)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="54.671875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,31.8906,45)" class="repeat-label">
+                        <tspan>4…9 times</tspan>
+                        <title>
+                          <text x="0" y="0">repeats 5…10 times in total</text>
+                        </title>
+                      </text>
+                    </g>
+                    <path d="M20,12H0M74.671875,12H99.671875"></path>
+                    <circle cx="0" cy="12" r="5"></circle>
+                    <circle cx="99.671875" cy="12" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <figure class="shift-left svg-container" data-expr="(?:non-greedy){5,10}?">
+              <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  version="1.1" width="148.6875457763672" height="67">
+                  <defs>
+                    <style type="text/css">
+                      svg {
+                        background-color: #fff;
+                      }
+
+                      .root text,
+                      .root tspan {
+                        font: 12px Arial;
+                      }
+
+                      .root path {
+                        fill-opacity: 0;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .root circle {
+                        fill: #6b6659;
+                        stroke-width: 2px;
+                        stroke: #000;
+                      }
+
+                      .anchor text,
+                      .any-character text {
+                        fill: #fff;
+                      }
+
+                      .anchor rect,
+                      .any-character rect {
+                        fill: #6b6659;
+                      }
+
+                      .escape text,
+                      .charset-escape text,
+                      .literal text {
+                        fill: #000;
+                      }
+
+                      .escape rect,
+                      .charset-escape rect {
+                        fill: #bada55;
+                      }
+
+                      .literal rect {
+                        fill: #dae9e5;
+                      }
+
+                      .charset .charset-box {
+                        fill: #cbcbba;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan,
+                      .match-fragment .repeat-label tspan {
+                        font-size: 10px;
+                      }
+
+                      .repeat-label {
+                        cursor: help;
+                      }
+
+                      .subexp .subexp-label tspan,
+                      .charset .charset-label tspan {
+                        dominant-baseline: text-after-edge;
+                      }
+
+                      .subexp .subexp-box {
+                        stroke: #908c83;
+                        stroke-dasharray: 6, 2;
+                        stroke-width: 2px;
+                        fill-opacity: 0;
+                      }
+
+                      .quote {
+                        fill: #908c83;
+                      }
+                    </style>
+                  </defs>
+                  <metadata>
+                    <rdf:rdf>
+                      <cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+                      </cc:license>
+                    </rdf:rdf>
+                  </metadata>
+                  <desc>Created with Snap</desc>
+                  <g transform="matrix(1,0,0,1,15,10)" class="root">
+                    <g transform="matrix(1,0,0,1,10,0)" class="regexp match match-fragment">
+                      <path d="M10,12q-10,0 -10,10v2q0,10 10,10h78.6875q10,0 10,-10v-2q0,-10 -10,-10"></path>
+                      <g transform="matrix(1,0,0,1,10,0)" class="subexp regexp match match-fragment literal">
+                        <g class="label">
+                          <rect width="78.6875" height="24" rx="3" ry="3"></rect>
+                          <text x="0" y="0" transform="matrix(1,0,0,1,5,17)">
+                            <tspan class="quote">“</tspan>
+                            <tspan>non-greedy</tspan>
+                            <tspan class="quote">”</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <text x="0" y="0" transform="matrix(1,0,0,1,50.9063,45)" class="repeat-label">
+                        <tspan>4…9 times</tspan>
+                        <title>
+                          <text x="0" y="0">repeats 5…10 times in total</text>
+                        </title>
+                      </text>
+                    </g>
+                    <path d="M20,12H0M98.6875,12H118.68754577636719"></path>
+                    <circle cx="0" cy="12" r="5"></circle>
+                    <circle cx="118.68754577636719" cy="12" r="5"></circle>
+                  </g>
+                </svg>
+              </div>
+
+
+              <figcaption>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">非贪婪的量词</font>
+                </font>
+              </figcaption>
+            </figure>
+
+            <p>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">范围量词指定模式可能重复的次数。</font>
+                <font style="vertical-align: inherit;">这里提供的两个例子都有一个范围“{5,10}”，循环分支的标签表示可以遵循分支的次数。</font>
+                <font style="vertical-align: inherit;">值比表达式中指定的值小1，因为在重复它是选项之前，模式必须匹配一次。</font>
+                <font style="vertical-align: inherit;">因此，对于这些示例，模式将匹配一次，然后循环将遵循4到9次，总共可以匹配5到10个模式。</font>
+              </font>
+            </p>
+          </div>
+        </section>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <ul class="inline-list">
+      <li>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">由</font>
+          <a href="mailto:jeff.avallone@gmail.com">
+            <font style="vertical-align: inherit;">Jeff Avallone</font>
+          </a>
+          <font style="vertical-align: inherit;">创建</font>
+        </font>
+        <a href="mailto:jeff.avallone@gmail.com">
+          <font style="vertical-align: inherit;"></font>
+        </a>
+      </li>
+    </ul>
+
+    <script type="text/html" id="svg-container-base">
+      <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          version="1.1">
+          <defs>
+            <style type="text/css">
+              svg {
+                background-color: #fff;
+              }
+
+              .root text,
+              .root tspan {
+                font: 12px Arial;
+              }
+
+              .root path {
+                fill-opacity: 0;
+                stroke-width: 2px;
+                stroke: #000;
+              }
+
+              .root circle {
+                fill: #6b6659;
+                stroke-width: 2px;
+                stroke: #000;
+              }
+
+              .anchor text,
+              .any-character text {
+                fill: #fff;
+              }
+
+              .anchor rect,
+              .any-character rect {
+                fill: #6b6659;
+              }
+
+              .escape text,
+              .charset-escape text,
+              .literal text {
+                fill: #000;
+              }
+
+              .escape rect,
+              .charset-escape rect {
+                fill: #bada55;
+              }
+
+              .literal rect {
+                fill: #dae9e5;
+              }
+
+              .charset .charset-box {
+                fill: #cbcbba;
+              }
+
+              .subexp .subexp-label tspan,
+              .charset .charset-label tspan,
+              .match-fragment .repeat-label tspan {
+                font-size: 10px;
+              }
+
+              .repeat-label {
+                cursor: help;
+              }
+
+              .subexp .subexp-label tspan,
+              .charset .charset-label tspan {
+                dominant-baseline: text-after-edge;
+              }
+
+              .subexp .subexp-box {
+                stroke: #908c83;
+                stroke-dasharray: 6, 2;
+                stroke-width: 2px;
+                fill-opacity: 0;
+              }
+
+              .quote {
+                fill: #908c83;
+              }
+            </style>
+          </defs>
+          <metadata>
+            <rdf:RDF>
+              <cc:License rdf:about="http://creativecommons.org/licenses/by/3.0/">
+                <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+                <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+                <cc:requires rdf:resource="http://creativecommons.org/ns#Notice" />
+                <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
+                <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+              </cc:License>
+            </rdf:RDF>
+          </metadata>
+        </svg>
+      </div>
+      <div class="progress">
+        <div style="width:0;"></div>
+      </div>
+    </script>
+  </footer>
+</body>
+
+</html>
