@@ -168,13 +168,13 @@
             <label for="chIgnore">忽略大小写</label>
           </div>
           <div class="btn-line">
-            <button class="btn-reg-test" id="btnRegTest">测试匹配</button>
+            <button class="btn-reg-test" id="btnRegTest">开始匹配</button>
           </div>
         </div>
       </div>
       <div class="line result">
         <div class="field">匹配结果: </div>
-        <textarea class="pre-test-words" id="resultTestWords" placeholder="匹配结果" spellcheck="false"></textarea>
+        <textarea disabled class="pre-test-words" id="resultTestWords" placeholder="匹配结果" spellcheck="false"></textarea>
       </div>
     </div>
     <!-- End 在线测试 -->
@@ -182,12 +182,18 @@
     <script src="https://aoxiaoqiang.github.io/reg/js/main.js" async defer></script>
     <script src="https://aoxiaoqiang.github.io/reg/js/online-test.js" async defer></script>
 
-    <a href="https://aoxiaoqiang.github.io/reg/doc.html">使用说明</a>
+    <!-- 文档 -->
+    <ul class="docs-list">
+      <li>相关文档</li>
+      <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank">JavaScript正则表达式</a></li>
+      <li><a href="https://aoxiaoqiang.github.io/reg/doc.html" target="_blank">可视化实例标识说明</a></li>
+    </ul>
+
     <div class="footer-copy">
-      说明: 本项目翻译自
+      项目说明: 本项目翻译自
       <a href="https://regexper.com/">https://regexper.com/</a> 站点(源项目由
-      <a href="mailto:jeff.avallone@gmail.com"> Jeff Avallone</a>创建)。由于官网(源站点)访问速度较慢, 所以备份了一份并翻译为中文方便国内开发者。项目仅供学习参考使用，如有侵权请
-      <a href="https://github.com/aoxiaoqiang">联系</a>删除此站点。
+      <a href="mailto:jeff.avallone@gmail.com" target="_blank">Jeff Avallone</a>创建)。由于官网(源站点)访问速度较慢, 所以备份了一份并翻译为中文方便国内开发者。项目仅供学习参考使用，如有侵权请
+      <a href="https://github.com/aoxiaoqiang" target="_blank">联系开发者</a>删除相关内容。在原项目基础上又添加了在线测试正则功能，如果问题或者建议可补充提 <a href="https://github.com/aoxiaoqiang/reg/issues" target="_blank">issue</a>.
       <br/>
     </div>
   </footer>
