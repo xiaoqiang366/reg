@@ -335,6 +335,69 @@ button {
   outline: none;
 }
 
+/* 在线测试正则 */
 .my-online-test-box{
+  margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 15px;
+}
+.my-online-test-box .line {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.my-online-test-box .line .field {
+  display: block;
+  width: 100px;
+  color: #f2f2f2;
+}
+.pre-test-words,
+.pre-test-reg {
+  position: relative;
+  top: -5px;
+  display: block;
+  outline: none;
+  width: 600px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+}
+.pre-test-words {
+  height: 100px;
+}
+.pre-test-reg {
+  font-size: 16px;
+  height: 40px;
+  font-weight: 900;
+}
+.test-plus {
+  margin: 6px 0;
+}
+.test-plus label{
+  color: #f2f2f2;
+  font-size: 12px;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+}
+button {
+  padding: 6px 20px;
+  background: #bada55;
+  border: 1px solid #8ca440;
+  outline: none;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .2s;
+}
+button:hover {
+  background: #8ca440;
+}
+.line.result {
+  margin-top: 20px;
+}
+.btn-line {
+  margin: 10px 0 20px;
 }

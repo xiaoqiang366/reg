@@ -147,10 +147,36 @@
     </script>
 
     <!-- 在线测试 -->
-    <div class="my-online-test-box"></div>
+    <div class="my-online-test-box">
+      <div class="line">
+        <div class="field">待匹配文本: </div>
+        <textarea class="pre-test-words" id="preTestWords" placeholder="请输入待匹配文本" spellcheck="false"></textarea>
+      </div>
+      <div class="line">
+        <div class="field">正则表达式: </div>
+        <div>
+          <input class="pre-test-reg" type="text" id="preTestReg" placeholder="请输入JavaScript风格正则表达式" spellcheck="false" />
+          <div class="test-plus">
+            <input type="checkbox" id="chMutiple" value="g">
+            <label for="chMutiple">全局匹配</label>
+            <input type="checkbox" id="chIgnore" value="i">
+            <label for="chIgnore">忽略大小写</label>
+          </div>
+          <div class="btn-line">
+            <button class="btn-reg-test" id="btnRegTest">测试匹配</button>
+          </div>
+        </div>
+      </div>
+      <div class="line result">
+        <div class="field">匹配结果: </div>
+        <textarea class="pre-test-words" id="resultTestWords" placeholder="匹配结果" spellcheck="false"></textarea>
+      </div>
+    </div>
     <!-- End 在线测试 -->
 
     <script src="https://aoxiaoqiang.github.io/reg/js/main.js" async defer></script>
+    <script src="https://aoxiaoqiang.github.io/reg/js/online-test.js" async defer></script>
+
     <a href="https://aoxiaoqiang.github.io/reg/doc.html">使用说明</a>
     <div class="footer-copy">
       说明: 本项目翻译自

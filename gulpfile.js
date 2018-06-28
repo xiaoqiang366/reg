@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const server = require('gulp-server-livereload');
 
 // 环境变量
-const env = process.env.NODE_ENV || 'production';
+const env = process.env.NODE_ENV || 'develop';
 const outPaths = {
   develop: './local',
   production: './'
@@ -39,14 +39,23 @@ gulp.task('watch', () => {
   watcher.on('change', function(event) {
     tempRelativePath = Path.relative('./', event.path);
     targetPath = Path.dirname(tempRelativePath).replace('src', 'local');
+
     gulp.src(tempRelativePath)
+      .pipe(assetpaths({
+        newDomain: env === 'develop' ? '.' : 'https://aoxiaoqiang.github.io/reg',
+        oldDomain : 'https://aoxiaoqiang.github.io/reg',
+        docRoot : 'public_html',
+        filetypes : ['js','css','ico'],
+        customAttributes: ['data-custom'],
+        templates: true
+      }))
       .pipe(gulp.dest(targetPath));
     // console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     console.log(chalk.green(`File changed: ${tempRelativePath} -> ${targetPath}/${Path.basename(tempRelativePath)}`));
   });
 })
 
-gulp.task('webserver', function() {
+gulp.task('webserver', ['default'], function() {
   gulp.src('./local')
     .pipe(server({
       livereload: true,
@@ -56,4 +65,4 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('default', ['html', 'resouces']);
-gulp.task('watchdev', ['watch', 'default', 'webserver']);
+gulp.task('watchdev', ['watch', 'webserver']);
