@@ -8,4 +8,15 @@
 2. 输入JavaScript风格的正则表达式例如 `/[a-zA-Z]/`, 点击可视化即可查看。
 3. 工具还可以将可视化结果保存为`svg`和`png`格式文件。
 
+## 本地运行
+
+```bash
+# 安装模块依赖
+npm install
+
+npm run dev # 生成本地文件
+npm run watch # 本地 watch 文件改动, 执行编译本地预览
+npm run build # 编译生成最终发布文件
+```
+
 [项目源码](https://gitlab.com/javallone/regexper-static)

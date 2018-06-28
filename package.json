@@ -1,0 +1,28 @@
+{
+  "name": "reg",
+  "version": "1.0.0",
+  "description": "[在线使用](https://aoxiaoqiang.github.io/reg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=develop gulp",
+    "build": "NODE_ENV=production gulp",
+    "watch": "NODE_ENV=develop gulp watchdev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aoxiaoqiang/reg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aoxiaoqiang/reg/issues"
+  },
+  "homepage": "https://github.com/aoxiaoqiang/reg#readme",
+  "devDependencies": {
+    "chalk": "2.4.1",
+    "gulp": "3.9.1",
+    "gulp-assetpaths": "0.3.0",
+    "gulp-server-livereload": "1.9.2"
+  }
+}
