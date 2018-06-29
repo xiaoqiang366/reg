@@ -340,17 +340,28 @@ button {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 15px;
+  width: 800px;
+  max-width: 100%;
 }
 .my-online-test-box .line {
-  margin-bottom: 10px;
+  position: relative;
+  padding-left: 100px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 .my-online-test-box .line .field {
+  position: absolute;
+  left: 0;
   display: block;
   width: 100px;
   color: #f2f2f2;
+}
+.my-online-test-box .line .field-set {
+  width: 100%;
 }
 .pre-test-words,
 .pre-test-reg {
@@ -358,11 +369,12 @@ button {
   top: -5px;
   display: block;
   outline: none;
-  width: 600px;
+  width: 100%;
   font-size: 15px;
   padding: 10px;
   border: none;
   border-radius: 2px;
+  box-sizing: border-box;
 }
 .pre-test-words {
   height: 100px;
@@ -382,18 +394,22 @@ button {
   cursor: pointer;
   user-select: none;
 }
-button {
+.green-button,
+#content .application .green-button{
   padding: 6px 20px;
-  background: #bada55;
+  background: #8ca440;
   border: 1px solid #8ca440;
+  border-left-color: #a3bf4a;
+  border-top-color: #a3bf4a;
   outline: none;
   border-radius: 3px;
   font-size: 15px;
   cursor: pointer;
   transition: all .2s;
 }
-button:hover {
-  background: #8ca440;
+.green-button:hover,
+#content .application .green-button:hover {
+  background: #a5c14d;
 }
 .line.result {
   margin-top: 20px;
@@ -404,4 +420,13 @@ button:hover {
 /* 文档 */
 .docs-list {
   margin-bottom: 20px;
+}
+.site-title {
+  margin-bottom: 6px;
+  font-size: 28px;
+}
+.site-sub-title {
+  color: #879e3c;
+  text-shadow: 1px 1px 0 #b2d053;
+  font-size: 14px;
 }

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Regexper</title>
+  <title>正则可视化</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Regular expression visualizer using railroad diagrams" />
@@ -21,10 +21,10 @@
   </a>
   <header>
     <div class="logo">
-      <h1>
-        <a href="https://aoxiaoqiang.github.io/reg/">Regular Expressions</a>
+      <h1 class="site-title">
+        <a href="https://aoxiaoqiang.github.io/reg/">正则可视化工具</a>
       </h1>
-      <span>你以为你只有2个问题, 其实......</span>
+      <span class="site-sub-title">你以为你没有问题, 其实......</span>
     </div>
   </header>
 
@@ -32,7 +32,7 @@
     <div class="application">
       <form id="regexp-form">
         <textarea id="regexp-input" autofocus="autofocus" placeholder="请输入JavaScript风格的正则表达式"></textarea>
-        <button type="submit">可视化</button>
+        <button type="submit" class="green-button">可视化</button>
 
         <ul class="inline-list">
           <li class="download-svg">
@@ -155,11 +155,13 @@
     <div class="my-online-test-box">
       <div class="line">
         <div class="field">待匹配文本: </div>
-        <textarea class="pre-test-words" id="preTestWords" placeholder="请输入待匹配文本" spellcheck="false"></textarea>
+        <div class="field-set">
+          <textarea class="pre-test-words" id="preTestWords" placeholder="请输入待匹配文本" spellcheck="false"></textarea>
+        </div>
       </div>
       <div class="line">
         <div class="field">正则表达式: </div>
-        <div>
+        <div class="field-set">
           <input class="pre-test-reg" type="text" id="preTestReg" placeholder="请输入JavaScript风格正则表达式" spellcheck="false" />
           <div class="test-plus">
             <input type="checkbox" id="chMutiple" value="g">
@@ -168,13 +170,15 @@
             <label for="chIgnore">忽略大小写</label>
           </div>
           <div class="btn-line">
-            <button class="btn-reg-test" id="btnRegTest">开始匹配</button>
+            <button class="btn-reg-test green-button" id="btnRegTest">开始匹配</button>
           </div>
         </div>
       </div>
       <div class="line result">
         <div class="field">匹配结果: </div>
-        <textarea disabled class="pre-test-words" id="resultTestWords" placeholder="匹配结果" spellcheck="false"></textarea>
+        <div class="field-set">
+          <textarea disabled class="pre-test-words" id="resultTestWords" placeholder="匹配结果" spellcheck="false"></textarea>
+        </div>
       </div>
     </div>
     <!-- End 在线测试 -->

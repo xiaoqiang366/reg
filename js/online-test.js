@@ -23,6 +23,7 @@ btnRegTest.addEventListener('click', function (event) {
   var testWdStr = preTestWords.value; // 待匹配字符
   // 验证正则的正则
   var regCheckReg = /^\/([\W\w]+)\/((?:([gim])(?!\3))(?:([gim])(?!(?:\3|\4)))?)?(?:[gim])?$/;
+  // var regCheckReg = /^\/[\s\S]+\/(?=[gmi]{0,3}$)(?:(.)(?!\1)(?:(.)(?!\1|\2).?)?)?$/;
 
   // 待检测字符非空验证
   if (!testWdStr) {

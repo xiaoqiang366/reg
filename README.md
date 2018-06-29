@@ -20,4 +20,10 @@ npm run watch # 本地 watch 文件改动, 执行编译本地预览
 npm run build # 编译生成最终发布文件
 ```
 
+```javascript
+// 匹配正则的正则
+var reg1 = /^\/([\W\w]+)\/((?:([gim])(?!\3))(?:([gim])(?!(?:\3|\4)))?)?(?:[gim])?$/g;
+var reg2 = /^\/([\W\w]+)\/(?=[gmi]{0,3}$)((.?)(?!.*\2))?((.?)(?!\4))?.?$/g;
+```
+
 [项目源码](https://gitlab.com/javallone/regexper-static)
