@@ -26,4 +26,5 @@ var reg1 = /^\/([\W\w]+)\/((?:([gim])(?!\3))(?:([gim])(?!(?:\3|\4)))?)?(?:[gim])
 var reg2 = /^\/([\W\w]+)\/(?=[gmi]{0,3}$)((.?)(?!.*\2))?((.?)(?!\4))?.?$/g;
 ```
 
-[项目源码](https://gitlab.com/javallone/regexper-static)
+[JavaScript中的正则](./Note.md)
+[参考项目](https://gitlab.com/javallone/regexper-static)
