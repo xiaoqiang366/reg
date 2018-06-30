@@ -27,4 +27,5 @@ var reg2 = /^\/([\W\w]+)\/(?=[gmi]{0,3}$)((.?)(?!.*\2))?((.?)(?!\4))?.?$/g;
 ```
 
 [JavaScript中的正则](./Note.md)
+
 [参考项目](https://gitlab.com/javallone/regexper-static)
