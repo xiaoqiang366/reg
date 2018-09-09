@@ -128,3 +128,12 @@ console.log(val); // 12
     var regStr1 = /^\/([\W\w]+)\/((?:([gim])(?!\3))(?:([gim])(?!(?:\3|\4)))?)?(?:[gim])?$/;
     var regStr2 = /^\/[\s\S]+\/(?=[gmi]{0,3}$)(?:(.)(?!\1)(?:(.)(?!\1|\2).?)?)?$/;
     ```
++ 更多问题
+
+  年月日格式提取`date.replace(/(\d{2})-(\d{2})-(\d{4})/, "$2-$1-$3")`
+
+  分组命名`date.replace(/(?<month>\d{2})-(?<day>\d{2})-(?<year>\d{4})/, "$<day>-$<month>-$<year>")`
+
+  贪婪模式 `/.*bbb/g.test('abfsbsbabbbdabbbsabbb')`   * + {n}
+
+  惰性模式

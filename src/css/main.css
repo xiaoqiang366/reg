@@ -430,3 +430,14 @@ button {
   text-shadow: 1px 1px 0 #b2d053;
   font-size: 14px;
 }
+
+/* 功能按钮 */
+.operate-btns { }
+.operate-btns a {
+  margin-left: 10px;
+  display: inline-block;
+  height: 34px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 36px;
+}
